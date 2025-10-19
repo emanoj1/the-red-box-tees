@@ -1,12 +1,59 @@
 :root {
-    --bg: #0b0f14;
-    --card: #121822;
-    --text: #d7e1f7;
-    --muted: #9bb0d3;
-    --accent: #7cf0ff;
-    --accent-2: #ff79e6;
-    --ring: rgba(124,240,255,0.35);
-  }
+  /* Base theme – soft neutral background */
+  --bg: rgb(247, 245, 241);     /* warm off-white */
+  --card: #ffffff;              /* white cards on warm background */
+  --text: #222222;              /* near-black for readability */
+  --muted: #555555;             /* softer gray for subtext */
+  
+  /* Accent colours (you can keep your brand red or accent blues/pinks if you like) */
+  --accent: #ff4747;            /* Redbubble red for CTAs */
+  --accent-2: #ff79e6;          /* optional pink secondary accent */
+  --ring: rgba(0, 0, 0, 0.08);  /* subtle shadows/borders */
+}
+
+/* Global base styles */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Universal card/section look */
+.card,
+.feature {
+  background: var(--card);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px var(--ring);
+}
+
+/* Footer */
+.footer {
+  background: transparent;
+  color: var(--muted);
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+  margin-top: 60px;
+}
+
+/* Buttons */
+.btn {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: #ff2e2e;
+  transform: translateY(-1px);
+}
+
   
   * { box-sizing: border-box; }
   html, body, #root { height: 100%; }
