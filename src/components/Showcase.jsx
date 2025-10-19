@@ -1,17 +1,17 @@
 export default function Showcase() {
     const items = [
       {
-        title: "Ambitious Model",
+        title: "The Messages",
         src: "/assets/showcase/ambitious-model.png",
         alt: "Ambitious model t-shirt design",
       },
       {
-        title: "Face One",
+        title: "Black & White Shadow Art",
         src: "/assets/showcase/face-1-model.png",
         alt: "Face design t-shirt mockup",
       },
       {
-        title: "Skeleton Car",
+        title: "Mechanical Skeleton Series",
         src: "/assets/showcase/skeleton-car-model.png",
         alt: "Skeleton driving car t-shirt design",
       },

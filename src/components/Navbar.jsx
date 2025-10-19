@@ -11,7 +11,7 @@ export default function Navbar() {
           <NavLink to="/" end className={({isActive}) => isActive ? "link active" : "link"}>Home</NavLink>
           <NavLink to="/about" className={({isActive}) => isActive ? "link active" : "link"}>About</NavLink>
           <a className="btn" href="https://www.redbubble.com/people/theredboxtees/shop" target="_blank" rel="noreferrer">
-            Shop on Redbubble
+            Visit The Store
           </a>
         </nav>
       </div>

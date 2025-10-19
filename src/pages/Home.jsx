@@ -5,7 +5,7 @@ export default function Home() {
     <div className="home">
       <section className="hero">
         <div className="hero-inner">
-          <h1 className="hero-title">Tees, stickers, prints – made to stand out.</h1>
+          <h1 className="hero-title">Smart high-quality tees made to stand out.</h1>
           <p className="hero-sub">Fun, punchy designs. Printed & shipped by Redbubble.</p>
         </div>
         <div className="glow" aria-hidden="true"></div>
