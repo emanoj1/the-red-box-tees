@@ -19,7 +19,7 @@
         var params = new URLSearchParams(location.search);
         var user = params.get("user") || "theredboxtees";
         var cols = parseInt(params.get("cols") || "3", 10);
-        var rows = parseInt(params.get("rows") || "3", 10);
+        var rows = parseInt(params.get("rows") || "1", 10);
         // This call relies on THIS script tag (id starts with rb-). RB will inject
         // its iframe next to this script via scriptTag.parentNode
         new RBExternalPortfolio("www.redbubble.com", user, cols, rows).renderIframe();

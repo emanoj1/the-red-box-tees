@@ -1,9 +1,9 @@
 // src/components/RedbubbleFeed.jsx
 export default function RedbubbleFeed({
   username = "theredboxtees",
-  columns = 5,
-  rows = 3,
-  height = 2000,
+  columns = 3,
+  rows = 1,
+  height = 500,
 }) {
   const src = `/rb-embed.html?user=${encodeURIComponent(username)}&cols=${columns}&rows=${rows}`;
   return (

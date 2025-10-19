@@ -1,20 +1,21 @@
-import RedbubbleFeed from "../components/RedbubbleFeed";
+import Showcase from "../components/Showcase";
 
 export default function Home() {
   return (
     <div className="home">
       <section className="hero">
-        <div className="hero-inner">           
+        <div className="hero-inner">
           <h1 className="hero-title">Tees, stickers, prints – made to stand out.</h1>
           <p className="hero-sub">Fun, punchy designs. Printed & shipped by Redbubble.</p>
-          <a className="btn hero-btn" href="#catalog">Browse the catalog</a>
+          <a className="btn hero-btn" href="https://www.redbubble.com/people/theredboxtees/shop" target="_blank" rel="noreferrer">
+            Shop on Redbubble
+          </a>
         </div>
         <div className="glow" aria-hidden="true"></div>
       </section>
 
-      <div id="catalog" className="container-wide">
-        <RedbubbleFeed username="theredboxtees" columns={3} rows={3} height={1200}/>
-      </div>
+      {/* Static showcase stays */}
+      <Showcase />
 
       <section className="features">
         <div className="feature">
@@ -33,3 +34,5 @@ export default function Home() {
     </div>
   );
 }
+
+
