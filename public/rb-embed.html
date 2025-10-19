@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>RB Embed</title>
+    <style>
+      html,body{margin:0;padding:0;background:transparent;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    </style>
+  </head>
+  <body>
+    <!-- 1) Load RB's script (must be before the init call) -->
+    <script type="text/javascript" src="https://www.redbubble.com/assets/external_portfolio.js"></script>
+
+    <!-- 2) IMPORTANT: Use an id that starts with rb- exactly like their example -->
+    <script id="rb-xzfcxvzx" type="text/javascript">
+      // Read optional query params, fallback to defaults
+      (function () {
+        var params = new URLSearchParams(location.search);
+        var user = params.get("user") || "theredboxtees";
+        var cols = parseInt(params.get("cols") || "3", 10);
+        var rows = parseInt(params.get("rows") || "3", 10);
+        // This call relies on THIS script tag (id starts with rb-). RB will inject
+        // its iframe next to this script via scriptTag.parentNode
+        new RBExternalPortfolio("www.redbubble.com", user, cols, rows).renderIframe();
+      })();
+    </script>
+  </body>
+</html>
+
+
