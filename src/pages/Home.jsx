@@ -7,9 +7,6 @@ export default function Home() {
         <div className="hero-inner">
           <h1 className="hero-title">Tees, stickers, prints – made to stand out.</h1>
           <p className="hero-sub">Fun, punchy designs. Printed & shipped by Redbubble.</p>
-          <a className="btn hero-btn" href="https://www.redbubble.com/people/theredboxtees/shop" target="_blank" rel="noreferrer">
-            Shop on Redbubble
-          </a>
         </div>
         <div className="glow" aria-hidden="true"></div>
       </section>
@@ -30,7 +27,20 @@ export default function Home() {
           <h3>Secure checkout</h3>
           <p>All payments & customer data handled by Redbubble.</p>
         </div>
+
       </section>
+            {/* 🔽 New centered "Shop" button below features */}
+            <div className="shop-cta">
+        <a
+          className="btn"
+          href="https://www.redbubble.com/people/theredboxtees/shop"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Check Out The Tees! →
+        </a>
+      </div>
+
     </div>
   );
 }

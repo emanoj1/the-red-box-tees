@@ -122,3 +122,23 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   background: transparent;
 }
+
+.shop-cta {
+  text-align: center;
+  margin: 40px 0 60px;
+}
+
+.shop-cta .btn {
+  display: inline-block;
+  background: #ff4747;          /* your brand color or Redbubble red */
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.shop-cta .btn:hover {
+  background: #ff2e2e;
+}
